@@ -18,7 +18,7 @@ Após criar o database vamos selecioná-lo.
 use vendas; 
 ```
 Com a base selecionada podemos seguir com a criação da primeira tabela chamada "clientes".
-Usaremos o CPF como chave primária, pois é um dado único dentro de todos os registros.
+Usaremos o CPF como chave primária, pois é um dado único dentre todos os registros.
 ```
 create table clientes (
 cpf varchar(11) not null,
@@ -39,7 +39,7 @@ select * from clientes;
 
 ```
 Vamos criar uma coluna para calcular a idade com base na data de nascimento. Como a idade é um número pequeno que não ultrapassará 256 vamos atribuir o tipo tinyint que é semelhante ao int, mas para número menores.
-Você pode utilziar o int, mas o tinyint irá reduzir o espaço ocupado na memória.
+Você pode utilziar o int, mas o tinyint irá reduzir o espaço ocupado na memória.\
 A função DATEDIFF irá retornar a diferença entre duas datas que na instrução foram CURRENT_DATA data atual (ano de 2024) para dt_nasc que é a data de nascimento, o resultado gerado é em número de dias e façoa divisão por 365 para chegar no número de anos e portanto a idade.
 
 ```

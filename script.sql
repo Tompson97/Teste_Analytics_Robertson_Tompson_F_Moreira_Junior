@@ -46,7 +46,6 @@ insert into clientes values
     ('34567890126', 'Rodrigo Mendes', '1996-07-23', '11988887777'),
     ('56789012348', 'Fernanda Costa', '1989-12-18', '11911118888');
 
-
 -- Criando a coluna idade
 alter table clientes
 add column idade tinyint;

@@ -7,7 +7,7 @@ Inciaremos com a criação da base de dados no MySQL Workbench, tratamento dos d
 ## CRIAÇÃO DA BASE DE DADOS 
 Utilizaremos a linguagem MySQL para criar toda a estrutra dos dados, então vamos começar.
 Estou criando um database chamados "vendas" utilizando os padrões de caracteres brasileiros "utf8" para ele aceitar palavras com acentos.\
-Depois vou criar 6 tabelas: Clientes, Produtos, Vendedor, Filial e Pedido.
+Depois vou criar 7 tabelas: Clientes, Produtos, Vendedor, Filial, Pedido e Devoluções.
 ```
 create database vendas 
 default character set utf8

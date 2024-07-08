@@ -4,14 +4,10 @@
 Este projeto foi desenvolvido para criar um dashboard de vendas utilizando as ferramentas MySQL E Power BI. Os dados são fictícios. \
 Inciaremos com a criação da base de dados no MySQL Workbench, tratamento dos dados e quando a estrutura está normalizada vamos conectar no Power BI para desenvolver os relatórios.
 
-
-
-
-
 ## CRIAÇÃO DA BASE DE DADOS 
 Utilizaremos a linguagem MySQL para criar toda a estrutra dos dados, então vamos começar.
-
-Estou criando um database chamados "vendas" utilizando os padrões de caracteres brasileiros "utf8" para ele aceitar palavras com acentos.
+Estou criando um database chamados "vendas" utilizando os padrões de caracteres brasileiros "utf8" para ele aceitar palavras com acentos.\
+Depois vou criar 6 tabelas: Clientes, Produtos, Vendedor, Filial e Pedido.
 ```
 create database vendas 
 default character set utf8

@@ -55,4 +55,5 @@ add column idade tinyint;
 UPDATE clientes
 SET idade = DATEDIFF(CURRENT_DATE, dt_nasc) / 365;
 
-select * from clientes;
+select * from clientes
+limit 5;

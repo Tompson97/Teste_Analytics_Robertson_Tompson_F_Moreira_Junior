@@ -68,6 +68,7 @@ df["id"] = df["id"].astype(str)
 # Portanto, vamos filtrar nosso dataframe para remover linhas desnecessárias fora desse intervalo.
 df = df[(df['Data'] >= '2023-01-01') & (df['Data'] <= '2023-12-31')]
 
+
 #--------------------------------------------------------------------------------------------------------------#
 
 # Inserindo uma nova coluna com o valor total de vendido em cada order

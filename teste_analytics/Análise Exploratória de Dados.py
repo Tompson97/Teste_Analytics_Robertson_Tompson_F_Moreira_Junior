@@ -59,5 +59,4 @@ plt.xlabel( # Definindo uma mensagem com obervações sobre o resultado.
 plt.ylabel("Total Vendido") # Rótulo do eixo y
 plt.title("Total Vendido por Mês") # Título do gráfico
 plt.xticks(venda_mensal.index, meses) # Exibindo o rótulo do eixo x com o nome dos meses da lista anterior
-plt.show()
-print("\n") # Pulando uma linha para exibir as próximas strings
+plt.show() # Exibe o gráfico

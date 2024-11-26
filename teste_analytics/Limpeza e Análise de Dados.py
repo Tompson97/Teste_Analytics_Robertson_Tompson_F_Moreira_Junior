@@ -2,12 +2,11 @@
 # Limpeza e Análise de Dados de Vendas.
 
 # Instalando dependências necessárias:
-# pip install pandas
+# pip install pandas # Execute esse comando no terminal
 
 # Importando a biblioteca Pandas para analisar dados de origem .xlsx (Excel).
 import pandas as pd
 # Usaremos o "pd" para referenciar essa biblioteca.
-
 
 # Carregando dados da simulação para o ambiente de desenvolvimento.
 dados = pd.read_excel(
@@ -69,13 +68,13 @@ df["id"] = df["id"].astype(str)
 # Portanto, vamos filtrar nosso dataframe para remover linhas desnecessárias fora desse intervalo.
 df = df[(df['Data'] >= '2023-01-01') & (df['Data'] <= '2023-12-31')]
 
-# Salvando os dados tratando em um arquivo .csv
-df.to_csv("data_clean.csv", index=False, encoding='utf-8')
-
 #--------------------------------------------------------------------------------------------------------------#
 
 # Inserindo uma nova coluna com o valor total de vendido em cada order
 df["Total Vendido"] = df["Quantidade"] * df["Preço"]
+
+# Salvando os dados tratando em um arquivo .csv
+df.to_csv("data_clean.csv", index=False, encoding='utf-8', decimal='.')
 
 # Criando uma variável que irá receber o valor total vendido por produto
 total_vendido = df.groupby("Produto")["Total Vendido"].sum()
@@ -84,7 +83,7 @@ total_vendido = df.groupby("Produto")["Total Vendido"].sum()
 total_vendido = total_vendido.sort_values(ascending=False)
 
 # Exibindo o total de vendas por produto.
-print("Total de vendas por produto:")
+print("Total de vendas por produto")
 print(total_vendido)
 print("\n") # Pulando uma linha para exibir as próximas strings
 
